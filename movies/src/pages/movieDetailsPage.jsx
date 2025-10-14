@@ -9,6 +9,7 @@ import { getMovie, getMovieImages } from "../api/tmdb-api";
 
 
 
+
 const MoviePage = (props) => {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);

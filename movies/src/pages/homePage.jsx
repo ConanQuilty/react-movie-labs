@@ -15,7 +15,7 @@ const HomePage = (props) => {
     setMovies(updatedMovies);
   };
 
-   useEffect(() => {
+  useEffect(() => {
     getMovies().then(movies => {
       setMovies(movies);
     });
@@ -31,3 +31,4 @@ const HomePage = (props) => {
   );
 };
 export default HomePage;
+
