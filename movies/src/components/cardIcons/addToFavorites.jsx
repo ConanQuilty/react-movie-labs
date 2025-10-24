@@ -19,3 +19,4 @@ const AddToFavoritesIcon = ({ movie }) => {
 };
 
 export default AddToFavoritesIcon;
+
