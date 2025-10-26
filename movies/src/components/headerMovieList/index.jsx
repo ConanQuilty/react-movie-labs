@@ -22,7 +22,7 @@ const Header = (props ) => {
       }}
       >
             <IconButton aria-label="go back" onClick={() => navigate(-1)}>
-        <ArrowBackIcon color="primary" fontSize="large" />
+        <ArrowBackIcon color="primary" fontSize="large" sx = {{color: "#038C73"}} />
       </IconButton>
 
 
@@ -30,7 +30,7 @@ const Header = (props ) => {
         {title}
       </Typography>
             <IconButton aria-label="go forward" onClick={() => navigate(+1)}>
-        <ArrowForwardIcon color="primary" fontSize="large" />
+        <ArrowForwardIcon color="primary" fontSize="large" sx = {{color: "#038C73"}} />
       </IconButton>
 
     </Paper>
