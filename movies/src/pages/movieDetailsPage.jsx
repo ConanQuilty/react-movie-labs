@@ -6,7 +6,7 @@ import { getMovie, getMovieCast } from '../api/tmdb-api'
 import { useQuery } from '@tanstack/react-query';
 import Spinner from '../components/spinner'
 // import useMovie from "../hooks/useMovie";   Redundant
-import MovieCast from "../components/movieCast";
+import ActorList from "../components/actorList";
 
 
 const MoviePage = (props) => {
@@ -47,8 +47,8 @@ const MoviePage = (props) => {
       {movie ? (
         <>
           <PageTemplate movie={movie}>
-            <MovieDetails movie={movie} />
-            <MovieCast cast={cast} />
+            <MovieDetails movie={{...movie, cast}} />
+            {/* <ActorList cast={cast} /> */}
           </PageTemplate>
         </>
       ) : (

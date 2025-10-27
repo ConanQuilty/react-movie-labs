@@ -10,6 +10,8 @@ import Typography from "@mui/material/Typography";
 import { Padding } from "@mui/icons-material";
 import Drawer from "@mui/material/Drawer";
 import MovieReviews from "../movieReviews"
+import ActorList from "../actorList";
+
 
 
 const root = {
@@ -61,6 +63,10 @@ const MovieDetails = ({ movie }) => {
              />
         <Chip label={`Released: ${movie.release_date}`} />
       </Paper>
+      <Typography variant="h5" component="h3">
+        Actors
+      </Typography>
+      <ActorList actors={movie.cast || []}/>
             <Fab
         color="secondary"
         variant="extended"
