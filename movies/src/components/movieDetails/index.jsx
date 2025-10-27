@@ -67,7 +67,7 @@ const MovieDetails = ({ movie }) => {
         Actors
       </Typography>
       <ActorList actors={movie.cast || []}/>
-            <Fab
+      <Fab
         color="secondary"
         variant="extended"
         onClick={() =>setDrawerOpen(true)}

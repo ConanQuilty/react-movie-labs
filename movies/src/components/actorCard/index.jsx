@@ -11,7 +11,8 @@ import Button from "@mui/material/Button";
 
 export default function ActorCard({ actor }) {
   return (
-    <Card sx={{ backgroundColor: "#e4e4e4ff" }}>
+    <Card sx={{ backgroundColor: "#e4e4e4ff", display: "flex", flexDirection: "column", 
+    justifyContent: "space-between", height: "100%" }}>
       <CardHeader
         title={
           <Typography variant="h6" component="p">
@@ -26,6 +27,7 @@ export default function ActorCard({ actor }) {
         image={
           actor.profile_path ? `https://image.tmdb.org/t/p/w500/${actor.profile_path}` : img
         }
+        
         alt={actor.name}
       />
       {/* Here for future use, not functional yet */}  
