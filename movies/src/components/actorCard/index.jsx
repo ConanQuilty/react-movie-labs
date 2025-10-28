@@ -19,7 +19,7 @@ export default function ActorCard({ actor }) {
             {actor.name}
           </Typography>
         }
-        subheader={`as ${actor.character}`}
+        subheader={actor.character ? `as ${actor.character}`: null}
       />
 
       <CardMedia

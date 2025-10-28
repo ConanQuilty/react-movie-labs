@@ -86,11 +86,12 @@ export default function FilterMoviesCard(props) {
           <Select
             labelId="genre-label"
             id="genre-select"
+            onChange={handleGenreChange}
           >
             {genres.map((genre) => {
               return (
-                <MenuItem key={genre.id} value={genre.id}>
-                  {genre.name}
+                <MenuItem key={genre.id} value={genre.id }>
+                  {genre.name} 
                 </MenuItem>
               );
             })}

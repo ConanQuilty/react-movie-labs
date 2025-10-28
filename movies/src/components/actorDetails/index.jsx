@@ -35,17 +35,18 @@ const ActorDetails = ({ actor }) => {
   return (
     <>
       <Grid container spacing={3}>
-        <Grid item>
+        <Grid item sx ={{display: "flex", justifyContent: "center"}}>
           <Avatar
             alt={actor.name}
             src={
               actor.profile_path ? `https://image.tmdb.org/t/p/w500/${actor.profile_path}`: img
             }
             sx={{
+              position: "center",
               width: "100%",
               height: "auto",
-              borderRadius: 2,
-              boxShadow: 2,
+              borderRadius: 10,
+              boxShadow: 10,
             }}
             variant="square"
           />
