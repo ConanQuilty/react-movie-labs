@@ -65,7 +65,8 @@ export default function FilterMoviesCard(props) {
         backgroundColor: "#D98236"
       }} 
       variant="outlined">
-      <CardContent>
+      <CardContent sx={{display: "flex", allignItems: "center", 
+        justifyContent: "space-between", flexWrap: "wrap", gap: 2}}>
         <Typography variant="h5" component="h1">
           <SearchIcon fontSize="large" />
           Filter the movies.
@@ -95,18 +96,6 @@ export default function FilterMoviesCard(props) {
             })}
           </Select>
         </FormControl>
-      </CardContent>
-      <CardMedia
-        sx={{ height: 300 }}
-        image={img}
-        title="Filter"
-      />
-      <CardContent>
-        <Typography variant="h5" component="h1">
-          <SearchIcon fontSize="large" />
-          Filter the movies.
-          <br />
-        </Typography>
       </CardContent>
     </Card>
   );
