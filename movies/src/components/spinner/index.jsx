@@ -1,5 +1,5 @@
 import React from 'react';
-import CircularProgress from '@mui/material/CircularProgress';
+import { LinearProgress } from '@mui/material';
 
 export default function CircularIndeterminate() {
   return (
@@ -9,8 +9,7 @@ export default function CircularIndeterminate() {
         '& > * + *': {
           marginLeft: '2em',
         }}}>
-      <CircularProgress />
-      <CircularProgress />
+      <LinearProgress />
     </div>
   );
 }
