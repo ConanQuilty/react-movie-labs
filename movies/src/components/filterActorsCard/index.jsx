@@ -23,14 +23,6 @@ const formControl =
 
   export default function FilterActorsCard(props) {
   
-    
-    if (isPending) {
-      return <Spinner />;
-    }
-  
-    if (isError) {
-      return <h1>{error.message}</h1>;
-    }
   
     const handleChange = (e, type, value) => {
       e.preventDefault();
