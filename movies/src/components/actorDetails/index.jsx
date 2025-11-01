@@ -9,6 +9,7 @@ import { useQuery } from "@tanstack/react-query";
 import Spinner from "../spinner";
 import { getActorCredits } from "../../api/tmdb-api"; 
 import img from "../../images/film-poster-placeholder.png";
+import Header from "../headerActorDetails";
 
 const root = {
   display: "flex",
@@ -34,6 +35,7 @@ const ActorDetails = ({ actor }) => {
   console.log('Actors movies: ', movies)
   return (
     <>
+      <Header />
       <Grid container spacing={3}>
         <Grid item sx ={{display: "flex", justifyContent: "center"}}>
           <Avatar
